@@ -40,3 +40,21 @@ h1,h2,h3{overflow-wrap:anywhere}.contact-grid>*,.passion-inner>*,.model-panel>*,
   .hero>.hero-photo video{object-position:50% 50%}
   .hero>.hero-photo::after{content:'';position:absolute;inset:-1px 0;background:linear-gradient(180deg,#151618 0%,transparent 28%,transparent 78%,#151618 100%);pointer-events:none}
 }
+
+/* Compact navigation and a calmer mobile hero, with WhatsApp in the contact bar. */
+.hero-title-lead{font:inherit;display:block}
+.header .nav{height:68px}.header .brand-logo{width:78px;height:55px}.header nav{top:68px}html{scroll-padding-top:84px}
+@media(max-width:900px){.header .nav{height:64px}.header .brand-logo{width:74px;height:52px}.header nav{top:64px}}
+@media(max-width:650px){
+ .header .nav{height:58px}.header .brand-logo{width:68px;height:48px}.header nav{top:58px}html{scroll-padding-top:74px}
+ .hero{min-height:620px}.hero .hero-actions{display:none}
+ .hero h1{font-size:clamp(28px,8.9vw,54px);line-height:1.08}
+ .hero-title-lead{white-space:nowrap;letter-spacing:-.3px}.hero-title-lead br{display:none}
+ .hero h1>span{font-size:.85em;line-height:1.15;margin-top:10px}
+ .hero .hero-shade{background:linear-gradient(180deg,#121315 0%,#121315c2 27%,#12131526 62%,#12131585 100%)}
+ .hero>.hero-photo::after{background:linear-gradient(180deg,#151618 0%,transparent 22%,transparent 88%,#151618 100%)}
+ .mobile-bar .mobile-whatsapp{display:flex;align-items:center;justify-content:center;min-height:52px;gap:7px;background:var(--red);color:#fff}
+ .mobile-bar .mobile-whatsapp:hover{background:#bb111a}.mobile-bar .mobile-whatsapp svg{width:20px;height:20px;flex-shrink:0}
+}
+
+@media(max-width:650px){.mobile-bar .mobile-call{display:flex;align-items:center;justify-content:center;gap:7px;color:#fff}.mobile-bar .mobile-call svg{width:18px;height:18px;flex-shrink:0}}
