@@ -30,3 +30,13 @@ form>small a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.header .nav{height:68px}.header .brand-logo{width:82px;height:58px}.header nav{top:68px}html{scroll-padding-top:84px}.topbar-address{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.topbar .wrap>span{flex:1}.hero h1{font-size:clamp(51px,14vw,75px)}.hero h1>span{font-size:.62em;line-height:1.12}.hero-content .hero-bottom{margin-top:auto;padding-top:25px}.hero-actions{gap:14px 22px;flex-wrap:wrap}.hero-actions .text-link{font-size:12px}.hero-content{padding-bottom:0}.hero-bottom{min-height:57px}.steps{grid-template-columns:1fr}.service-bottom{display:block}.service-bottom a{margin-top:10px}.community-proof{padding:20px 0}.community-proof .wrap{display:block}.community-proof strong{font-size:13px}.community-proof a{margin-top:8px}.community-proof span{font-size:11px}.name-story p{font-size:14px}.detail-hero h1{font-size:clamp(43px,11.8vw,70px);overflow-wrap:break-word}.detail-hero p{font-size:14px}.detail-cta h2{font-size:38px}footer>.wrap:first-child{flex-direction:column;align-items:flex-start;gap:15px}footer>.wrap>span{font-size:16px;max-width:290px}.hero .eyebrow{font-size:8px;letter-spacing:1.4px}}
 .hero-content>*{max-width:100%;min-width:0}.hero-content h1{width:100%;overflow-wrap:anywhere}.community-proof .wrap>div{min-width:0}.service-bottom>span{min-width:0}
 h1,h2,h3{overflow-wrap:anywhere}.contact-grid>*,.passion-inner>*,.model-panel>*,.service-grid>*{min-width:0}.contact-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}.passion-inner,.model-panel{grid-template-columns:repeat(2,minmax(0,1fr))}.passion-art>span{max-width:100%;overflow-wrap:anywhere}@media(max-width:650px){.contact-grid,.passion-inner,.model-panel{grid-template-columns:minmax(0,1fr)}}
+/* Race-start sequence: red, amber, amber, green */
+#cum-lucram .steps article:nth-child(1)>span{color:#d71920}
+#cum-lucram .steps article:nth-child(2)>span,#cum-lucram .steps article:nth-child(3)>span{color:#b58100}
+#cum-lucram .steps article:nth-child(4)>span{color:#168447}
+/* Mobile hero: wider video framing with a soft blend into the copy area. */
+@media(max-width:650px){
+  .hero>.hero-photo{inset:auto 0 57px;height:clamp(280px,72vw,400px)}
+  .hero>.hero-photo video{object-position:50% 50%}
+  .hero>.hero-photo::after{content:'';position:absolute;inset:-1px 0;background:linear-gradient(180deg,#151618 0%,transparent 28%,transparent 78%,#151618 100%);pointer-events:none}
+}
